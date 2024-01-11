@@ -1,0 +1,24 @@
+[user]
+	name = weiran03
+	email = weiran03@kuaishou.com
+[alias]
+	st = status -s
+	br = branch
+	co = commit
+	ch = checkout
+	sw = switch
+        lg = log --graph --pretty=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' -n15
+
+[core]
+	quotepath = false
+[gui]
+	encoding = utf-8
+[i18n "commit"]
+	encoding = utf-8
+[i18n]
+	logoutputencoding = utf-8
+	commitencoding = utf-8
+[credential]
+	helper = cache --timeout=604800
+[pager]
+	log = false

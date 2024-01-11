@@ -1,0 +1,18 @@
+# export DOTDROP_CONFIG="/Users/weiran/.dotfiles/config.yaml"
+
+alias kc="kubecolor"
+alias ll="ls -a"
+
+# alias relay="ssh weiran03@relay.corp.kuaishou.com"
+
+function relay() {
+    if [ "$(basename $(ps -p $(ps -p $$ -o ppid=) -o comm=))" = "tmux" ]; then
+        tmux rename-window kuaishou-relay
+        # tmux set-window-option automatic-rename "on" 1>/dev/null
+    fi
+    command ssh relay
+}
+
+
+
+export PATH="$PATH:/Users/weiran/.go/bin"
